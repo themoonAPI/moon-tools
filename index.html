@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Ultimate Intro -->
+    <div id="intro" class="intro-active">
+        <div class="intro-content">
+            <img src="moon-text.png" alt="MOON" class="intro-title">
+            <img src="m-logo.png" alt="Moon Logo" class="intro-logo">
+            <p>Lunar toolkit for everything</p>
+            <button id="enter-btn">Enter Moon Tools</button>
+        </div>
+    </div>
+
+    <!-- Tools Dashboard -->
+    <div id="tools" class="hidden">
+        <header>
+            <img src="m-logo.png" alt="Moon Logo" class="logo">
+            <img src="moon-text.png" alt="MOON" class="title">
+        </header>
+        <div class="tool-grid">
+            <div class="tool-card" id="calc-card">
+                <h3>Calculator</h3>
+                <input type="text" id="calc-display" readonly>
+                <div class="calc-buttons"></div>
+            </div>
+            <div class="tool-card" id="converter-card">
+                <h3>Unit Converter</h3>
+                <input type="number" id="converter-input">
+                <select id="from-unit">
+                    <option value="cm">cm</option>
+                    <option value="inch">inch</option>
+                </select>
+                to
+                <select id="to-unit">
+                    <option value="inch">inch</option>
+                    <option value="cm">cm</option>
+                </select>
+                <p id="converter-result"></p>
+            </div>
+            <div class="tool-card" id="qr-card">
+                <h3>QR Generator</h3>
+                <input type="text" id="qr-input" placeholder="Enter text/URL">
+                <button id="generate-qr">Generate</button>
+                <canvas id="qr-canvas"></canvas>
+            </div>
+            <div class="tool-card" id="pw-card">
+                <h3>Password Generator</h3>
+                <input type="number" id="pw-length" value="12" min="8" max="32">
+                <button id="generate-pw">Generate</button>
+                <p id="pw-result"></p>
+            </div>
+            <!-- Add more tools like stopwatch -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
