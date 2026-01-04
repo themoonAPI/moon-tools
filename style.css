@@ -1,0 +1,23 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { background: #000; color: #D8B4FE; font-family: Arial; }
+
+#intro { /* same as above */ }
+
+.tool-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; padding: 50px; }
+
+.tool-card { background: #0a000a; border: 5px solid #A78BFA; border-radius: 40px; padding: 30px; text-align: center; box-shadow: 0 0 60px #A78BFA; }
+
+.tool-card h3 { font-size: 26px; margin-bottom: 20px; text-shadow: 0 0 20px #D8B4FE; }
+
+.tool-card input, select { padding: 15px; background: #000; border: 3px solid #A78BFA; color: white; font-size: 20px; border-radius: 30px; margin: 15px 0; }
+
+.tool-card button { background: linear-gradient(#A78BFA, #D8B4FE); color: #000; padding: 15px 40px; border-radius: 50px; font-size: 20px; cursor: pointer; box-shadow: 0 0 40px #A78BFA; }
+
+.calc-buttons { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+
+.calc-btn { background: #0a000a; border: 3px solid #A78BFA; padding: 20px; font-size: 24px; cursor: pointer; }
+
+#qr-canvas { margin-top: 20px; border: 3px solid #A78BFA; border-radius: 20px; }
+
+.hidden { display: none; }
